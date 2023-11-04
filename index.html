@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<title>Tic Toc Toe Game</title>
+</head>
+<body>
+	<div class="game">
+		<header class="header">
+			<div class="xo">
+				<div class="x-ds" style="--size : 22px; --dp : 6px; --clr : var(--light-cyan);"></div>
+				<div class="o-ds" style="--size : 22px; --dp : 6px; --clr : var(--yellow);"></div>	
+			</div>
+
+			<div class="ply-turn">
+				<div class="turn" style="--size : 16px; --dp : 4px; --clr : var(--light-gray);"></div>
+				<span>TURN</span>
+			</div>
+
+			<button class="reset">
+				<ion-icon name="refresh-outline"></ion-icon>
+			</button>
+			
+		</header>
+
+		<div class="box-grid">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+
+		<div class="mth-info">
+			<div class="x-ronud" style="--bg : var(--light-cyan); --brd : var(--dark-cyan);">
+				<div>
+					<div class="x-ds" style="--size : 13px; --dp : 4px; --clr : var(--color-very-dark);"></div>
+					<span>ROUND</span>
+				</div>
+				<div class="value">0</div>
+			</div>
+
+			<div class="ties" style="--bg : var(--light-gray); --brd : var(--gray);">
+				<div><span>TIES</span></div>
+				<div class="value">0</div>
+			</div>
+
+			<div class="o-ronud" style="--bg : var(--yellow); --brd : var(--dark-yellow);">
+				<div>
+					<div class="o-ds" style="--size : 13px; --dp : 4px; --clr : var(--color-very-dark);"></div>
+					<span>ROUND</span>
+				</div>
+				<div class="value">0</div>
+			</div>
+		</div>
+
+		<div class="win-bar">
+			<div class="winner">
+				<h4>YOU WIN!</h4>
+				<div class="takes-round">
+					<div class="x-ds" style="--size : 60px; --dp : 17px; --clr : var(--light-cyan);"></div>
+					<span>TAKES THE ROUND</span>
+				</div>
+				<div class="qt-nx">
+					<button class="quit">QUIT</button>
+					<button class="next-round">NEXT ROUND</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
